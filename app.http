@@ -1,0 +1,10 @@
+#send
+POST 'http://localhost:3000/products'
+Content-Type: application/json
+
+{
+    "name":"Andrey",
+    "email":"Vargas@gmail.com",
+    "password": "1234",
+    "phone":"12134114"
+}
