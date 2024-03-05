@@ -9,12 +9,16 @@
 <body>
     <form class="form-products" action="http://localhost:3000/products" method="post">
         <h2>Form Register</h2>
-        <input class="form-products_input" name="name"   type="text" placeholder="Name">
-        <input class="form-products_input" name="pass"   type="text" placeholder="Password">
-        <input class="form-products_input" name="adress" type="text" placeholder="Address">
-        <input class="form-products_input" name="phone"  type="text" placeholder="Phone">
-        <button type="submit">Register</button>
+        <input class="form-products_input" name="name"   type="text" required placeholder="Name">
+        <input class="form-products_input" name="pass"   type="password" required ="Password">
+        <input class="form-products_input" name="adress" type="email" required placeholder="Address">
+        <input class="form-products_input" name="phone"  type="number" required placeholder="Phone">
+        <button id="btn" type="submit">Register</button>
         <a href="./index.html"><-Back</a>
     </form>
+    <script src="../js/others.js"></script>
 </body>
+
+
+
 </html>

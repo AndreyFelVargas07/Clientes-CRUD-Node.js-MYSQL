@@ -2,12 +2,15 @@ import  express, {json}  from "express";
 import { custRouter } from "./routes/customerRouter.mjs";
 import  morgan  from "morgan";
 import {__dirname} from './utils.mjs';
+import bodyParser from "body-parser";
 import path from "path";
-
 
 const app = express();
 
 //Middelwares 
+
+app.use(bodyParser.urlencoded({extended:true}))
+app.use(express.text());
 app.use(json())
 app.use(morgan('dev'));
 
